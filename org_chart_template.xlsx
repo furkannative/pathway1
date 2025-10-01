@@ -1,0 +1,9 @@
+Name,Title,Department,Location,Email,Manager
+Ahmet Yılmaz,CEO,Executive,Istanbul,ahmet@example.com,
+Mehmet Kaya,CTO,Technology,Istanbul,mehmet@example.com,Ahmet Yılmaz
+Ayşe Demir,CFO,Finance,Ankara,ayse@example.com,Ahmet Yılmaz
+Ali Öztürk,VP of Engineering,Technology,Istanbul,ali@example.com,Mehmet Kaya
+Zeynep Çelik,VP of Product,Technology,Istanbul,zeynep@example.com,Mehmet Kaya
+Mustafa Şahin,Senior Developer,Technology,Istanbul,mustafa@example.com,Ali Öztürk
+Fatma Yıldız,UX Designer,Technology,Istanbul,fatma@example.com,Zeynep Çelik
+Emre Kara,Financial Analyst,Finance,Ankara,emre@example.com,Ayşe Demir

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center w-full px-3 py-2.5 text-[15px] text-gray-700 rounded-md hover:bg-gray-100 transition-colors duration-150;
+  }
+
+  .sidebar-item.active {
+    @apply bg-gray-100;
+  }
+
+  .sidebar-item-icon {
+    @apply w-[18px] h-[18px] mr-3 flex-shrink-0 text-gray-500;
+  }
+
+  .sidebar-header {
+    @apply flex items-center space-x-2 mb-6 text-[15px] font-medium;
+  }
+
+  .sidebar-header-icon {
+    @apply w-[22px] h-[22px] text-blue-600;
+  }
+
+  .sidebar-header-text {
+    @apply text-blue-600 font-medium border-b-2 border-blue-600 pb-1;
+  }
+}
+
+.sidebar-link {
+  @apply flex items-center px-3 py-2 text-sm text-gray-700 rounded-md hover:bg-gray-100 transition-colors;
+}
+
+.sidebar-link.active {
+  @apply bg-blue-50 text-blue-600;
+}
+
+.card {
+  @apply p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition-all duration-200 ease-in-out;
+}
+
+.btn {
+  @apply px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply text-blue-600 hover:bg-blue-50;
+}
